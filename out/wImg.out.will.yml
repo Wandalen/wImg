@@ -2,36 +2,35 @@ format: outwillfile-2.0
 root:
   - wImg.out
 consistency:
-  wImg.out.will.yml: &ref_0
-    hash: c1d42710a5f00a8855eb8712240ea7ed
-    size: 36688
-  ../.ex.will.yml: &ref_1
-    hash: cd87d7d0be9d346944a01da7cab7e1bc
-    size: 1636
-  ../.im.will.yml: &ref_2
-    hash: 4bd2ad8e081461ac0a9600e6aa2abea9
-    size: 4662
+  ../.ex.will.yml: &ref_0
+    hash: 9aea6f3124984a2d64447d29840075a2
+    size: 1746
+  ../.im.will.yml: &ref_1
+    hash: fd84bf9452edd278a080585c20ab392c
+    size: 4945
 module:
   wImg.out:
     about:
       name: wImg
       org: noorg
-      description: ___
+      description: >-
+        Standardized abstract interface to open / read / parse image with
+        collection of plugins. Aggregates module Image.
       enabled: 1
-      version: 0.4.0
-      interpreters:
+      version: 0.3.0
+      interpreters: &ref_2
         - njs >= 8.0.0
         - chrome >= 60.0.0
         - firefox >= 60.0.0
-      keywords:
+      keywords: &ref_3
         - tools
         - wTools
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
+      contributors: &ref_4
         - Kostiantyn Wandalen <wanalen@01.school>
       npm.name: wimg
-      npm.scripts:
+      npm.scripts: &ref_5
         test: wtest .run proto/**
         docgen: wdocgen .build proto
     path:
@@ -67,7 +66,7 @@ module:
       origins:
         path:
           - 'git+https:///github.com/Wandalen/wImg.git'
-          - 'npm:///wImg'
+          - 'npm:///wimg'
       bugtracker:
         path: 'https:///github.com/Wandalen/wImg/issues'
       in:
@@ -109,7 +108,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/___
+        path: ../proto/dwtools/amid/l4/Img.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -119,13 +118,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Img.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Img.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -156,10 +155,21 @@ module:
           - ../proto/dwtools/Tools.s
           - ../proto/dwtools/abase
           - ../proto/dwtools/amid
+          - ../proto/dwtools/amid/l4
+          - ../proto/dwtools/amid/l4/Img.s
+          - ../proto/dwtools/amid/l4.test
+          - ../proto/dwtools/amid/l4.test/Img.test.s
+          - ../proto/dwtools/amid/l4.test/_assets
+          - ../proto/dwtools/amid/l4.test/_assets/basic
+          - ../proto/dwtools/amid/l4.test/_assets/basic/Pixels-2x2.png
           - ../proto/dwtools/atop
     submodule:
       wTools:
         path: 'npm:///wTools'
+        autoExporting: 0
+        enabled: 0
+      wImage:
+        path: 'npm:///wimage'
         autoExporting: 0
         enabled: 0
       eslint:
@@ -168,6 +178,18 @@ module:
         enabled: 0
         criterion:
           debug: 1
+      wImg:
+        path: 'hd://..'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      wTesting:
+        path: 'npm:///wTesting'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -675,24 +697,6 @@ module:
           content: prime
         inherit:
           - files.transpile
-      exported.proto.export:
-        opts:
-          filePath: 'reflector::exported.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
-      exported.files.proto.export:
-        opts:
-          filePath: 'reflector::exported.files.proto.export*'
-        criterion:
-          generated: 1
-          content: proto
-          export: 1
-        inherit:
-          - files.reflect
     build:
       proto.export:
         steps:
@@ -769,7 +773,7 @@ module:
           - 'build::npm'
     exported:
       proto.export:
-        version: 0.4.0
+        version: 0.3.0
         recursive: 0
         withIntegrated: 2
         tar: 0
@@ -781,31 +785,24 @@ module:
           content: proto
           export: 1
     consistency:
-      wImg.out.will.yml: *ref_0
-      ../.ex.will.yml: *ref_1
-      ../.im.will.yml: *ref_2
+      ../.ex.will.yml: *ref_0
+      ../.im.will.yml: *ref_1
   ../:
     about:
       name: wImg
       org: noorg
-      description: ___
+      description: >-
+        Standardized abstract interface to open / read / parse image with
+        collection of plugins. Aggregates module Image.
       enabled: 1
-      version: 0.4.0
-      interpreters:
-        - njs >= 8.0.0
-        - chrome >= 60.0.0
-        - firefox >= 60.0.0
-      keywords:
-        - tools
-        - wTools
+      version: 0.3.0
+      interpreters: *ref_2
+      keywords: *ref_3
       license: MIT
       author: Kostiantyn Wandalen <wanalen@01.school>
-      contributors:
-        - Kostiantyn Wandalen <wanalen@01.school>
+      contributors: *ref_4
       npm.name: wimg
-      npm.scripts:
-        test: wtest .run proto/**
-        docgen: wdocgen .build proto
+      npm.scripts: *ref_5
     path:
       module.willfiles:
         criterion:
@@ -839,7 +836,7 @@ module:
       origins:
         path:
           - 'git+https:///github.com/Wandalen/wImg.git'
-          - 'npm:///wImg'
+          - 'npm:///wimg'
       bugtracker:
         path: 'https:///github.com/Wandalen/wImg/issues'
       in:
@@ -881,7 +878,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/___
+        path: proto/dwtools/amid/l4/Img.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -891,13 +888,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Img.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/___'
+        path: '{path::out.*=1}/source/dwtools/amid/l4/Img.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -915,12 +912,28 @@ module:
         path: 'npm:///wTools'
         autoExporting: 0
         enabled: 0
+      wImage:
+        path: 'npm:///wimage'
+        autoExporting: 0
+        enabled: 0
       eslint:
         path: 'npm:///eslint#7.1.0'
         autoExporting: 0
         enabled: 0
         criterion:
           debug: 1
+      wImg:
+        path: 'hd://.'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
+      wTesting:
+        path: 'npm:///wTesting'
+        autoExporting: 0
+        enabled: 0
+        criterion:
+          development: 1
     reflector:
       reflect.proto.debug.raw:
         src:
@@ -1453,11 +1466,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: cd87d7d0be9d346944a01da7cab7e1bc
-        size: 1636
+        hash: 9aea6f3124984a2d64447d29840075a2
+        size: 1746
       ../.im.will.yml:
-        hash: 4bd2ad8e081461ac0a9600e6aa2abea9
-        size: 4662
-      wImg.out.will.yml:
-        hash: c1d42710a5f00a8855eb8712240ea7ed
-        size: 36688
+        hash: fd84bf9452edd278a080585c20ab392c
+        size: 4945
