@@ -3,8 +3,8 @@
 about :
 
   name : 'wImg'
-  description : '___'
-  version : '0.4.0'
+  description : 'Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.'
+  version : '0.3.0'
   enabled : 1
   interpreters :
   - njs >= 8.0.0
@@ -27,7 +27,7 @@ path :
   repository : git+https:///github.com/Wandalen/wImg.git
   origins :
    - git+https:///github.com/Wandalen/wImg.git
-   - npm:///wImg
+   - npm:///wimg
   bugtracker : https:///github.com/Wandalen/wImg/issues
 
 step :
