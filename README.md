@@ -1,7 +1,7 @@
 
 # module::Img - Experimental [![Status](https://github.com/Wandalen/wImg/workflows/Test/badge.svg)](https://github.com/Wandalen/wImg/actions?query=workflow%3ATest)
 
-___
+Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.
 
 ## Try out
 ```
