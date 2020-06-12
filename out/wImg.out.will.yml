@@ -3,8 +3,8 @@ root:
   - wImg.out
 consistency:
   ../.ex.will.yml: &ref_0
-    hash: 9aea6f3124984a2d64447d29840075a2
-    size: 1746
+    hash: fa58ef27e0acb4cdd8e1e229510fcf30
+    size: 1747
   ../.im.will.yml: &ref_1
     hash: fd84bf9452edd278a080585c20ab392c
     size: 4945
@@ -1466,8 +1466,8 @@ module:
           - 'build::npm'
     consistency:
       ../.ex.will.yml:
-        hash: 9aea6f3124984a2d64447d29840075a2
-        size: 1746
+        hash: fa58ef27e0acb4cdd8e1e229510fcf30
+        size: 1747
       ../.im.will.yml:
         hash: fd84bf9452edd278a080585c20ab392c
         size: 4945
