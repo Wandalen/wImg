@@ -1,15 +1,35 @@
 {
-  "name" : "wimg",
-  "version" : "0.2.5",
-  "description" : "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
-  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
-  "license" : "MIT",
-  "main" : "proto/dwtools/amid/l4/Img.s",
-  "files" : [ "proto/dwtools/amid/l4/Img.s", "proto/dwtools/Tools.s" ],
-  "scripts" : { "test" : "wtest .run proto", "docgen" : "wdocgen .build proto" },
-  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wImg.git" },
-  "bugs" : { "url" : "https://github.com/Wandalen/wImg/issues" },
-  "dependencies" : { "wTools" : "alpha", "wimage" : "alpha" },
-  "devDependencies" : { "eslint" : "7.1.0", "wimg" : "file:.", "wTesting" : "alpha" },
-  "keywords" : [ "wTools" ]
+  "name": "wimg",
+  "version": "0.2.5",
+  "description": "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
+  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "license": "MIT",
+  "main": "proto/dwtools/amid/l3/image/entry/Img.s",
+  "files": [
+    "proto/dwtools/amid/l3/image/entry/Img.s",
+    "proto/dwtools/Tools.s"
+  ],
+  "scripts": {
+    "test": "wtest .run proto",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wImg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wImg/issues"
+  },
+  "dependencies": {
+    "wTools": "alpha",
+    "wimage": "alpha"
+  },
+  "devDependencies": {
+    "eslint": "7.1.0",
+    "wimg": "file:.",
+    "wTesting": "alpha"
+  },
+  "keywords": [
+    "wTools"
+  ]
 }
