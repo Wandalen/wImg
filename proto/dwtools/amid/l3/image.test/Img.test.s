@@ -5,11 +5,12 @@
 if( typeof module !== 'undefined' )
 {
 
-  let _ = require( '../../Tools.s' );
+  let _ = require( '../../../Tools.s' );
 
   _.include( 'wTesting' );
+  debugger;
 
-  require( '../../amid/l4/Img.s' );
+  require( '../image/entry/Img.s' );
 
 }
 
