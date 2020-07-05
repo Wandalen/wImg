@@ -1,5 +1,5 @@
 
-# module::Img [![experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/emersion/stability-badges#experimental) [![Status](https://github.com/Wandalen/wImg/workflows/Test/badge.svg)](https://github.com/Wandalen/wImg/actions?query=workflow%3ATest)
+# module::Img [![Status](https://circleci.com/gh/Wandalen/wImg.svg?style=shield)](https://img.shields.io/circleci/build/github/Wandalen/wImg?label=Test&logo=Test) [![Status](https://github.com/Wandalen/wImg/workflows/Test/badge.svg)](https://github.com/Wandalen/wImg/actions?query=workflow%3ATest) [![experimental](https://img.shields.io/badge/stability-experimental-orange.svg)](https://github.com/emersion/stability-badges#experimental)
 
 Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.
 
