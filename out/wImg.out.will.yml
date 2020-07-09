@@ -111,7 +111,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: ../proto/dwtools/amid/l3/image/entry/Img.s
+        path: ../proto/wtools/amid/l3/image/entry/Img.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -121,13 +121,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/amid/l3/image/entry/Img.s'
+        path: '{path::out.*=1}/source/wtools/amid/l3/image/entry/Img.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/amid/l3/image/entry/Img.s'
+        path: '{path::out.*=1}/source/wtools/amid/l3/image/entry/Img.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
@@ -154,22 +154,22 @@ module:
         path:
           - ../proto
           - ../proto/Integration.test.s
-          - ../proto/dwtools
-          - ../proto/dwtools/Tools.s
-          - ../proto/dwtools/abase
-          - ../proto/dwtools/amid
-          - ../proto/dwtools/amid/l3
-          - ../proto/dwtools/amid/l3/image
-          - ../proto/dwtools/amid/l3/image/entry
-          - ../proto/dwtools/amid/l3/image/entry/Img.s
-          - ../proto/dwtools/amid/l3/image/include
-          - ../proto/dwtools/amid/l3/image/include/Img.s
-          - ../proto/dwtools/amid/l3/image.test
-          - ../proto/dwtools/amid/l3/image.test/Img.test.s
-          - ../proto/dwtools/amid/l3/image.test/_assets
-          - ../proto/dwtools/amid/l3/image.test/_assets/basic
-          - ../proto/dwtools/amid/l3/image.test/_assets/basic/Pixels-2x2.png
-          - ../proto/dwtools/atop
+          - ../proto/wtools
+          - ../proto/wtools/Tools.s
+          - ../proto/wtools/abase
+          - ../proto/wtools/amid
+          - ../proto/wtools/amid/l3
+          - ../proto/wtools/amid/l3/image
+          - ../proto/wtools/amid/l3/image/entry
+          - ../proto/wtools/amid/l3/image/entry/Img.s
+          - ../proto/wtools/amid/l3/image/include
+          - ../proto/wtools/amid/l3/image/include/Img.s
+          - ../proto/wtools/amid/l3/image.test
+          - ../proto/wtools/amid/l3/image.test/Img.test.s
+          - ../proto/wtools/amid/l3/image.test/_assets
+          - ../proto/wtools/amid/l3/image.test/_assets/basic
+          - ../proto/wtools/amid/l3/image.test/_assets/basic/Pixels-2x2.png
+          - ../proto/wtools/atop
     submodule:
       wTools:
         path: 'npm:///wTools'
@@ -912,7 +912,7 @@ module:
       entry.proto.no.tests:
         criterion:
           tests: no.tests
-        path: proto/dwtools/amid/l3/image/entry/Img.s
+        path: proto/wtools/amid/l3/image/entry/Img.s
       entry.proto.only.tests:
         criterion:
           tests: only.tests
@@ -922,13 +922,13 @@ module:
           debug: debug
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/amid/l3/image/entry/Img.s'
+        path: '{path::out.*=1}/source/wtools/amid/l3/image/entry/Img.s'
       entry.out.raw.debug.release:
         criterion:
           debug: release
           raw: raw
           content: prime
-        path: '{path::out.*=1}/source/dwtools/amid/l3/image/entry/Img.s'
+        path: '{path::out.*=1}/source/wtools/amid/l3/image/entry/Img.s'
       entry.out.compiled.debug.debug:
         criterion:
           debug: debug
