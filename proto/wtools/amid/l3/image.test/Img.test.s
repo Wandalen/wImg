@@ -25,9 +25,9 @@ let _ = _global_.wTools;
 function routinesOfImage( test )
 {
   test.case = 'routines _.image.*';
-  test.is( _.routineIs( _.image.readHead ) );
-  test.is( _.routineIs( _.image.read ) );
-  test.is( _.routineIs( _.image.fileRead ) );
+  test.true( _.routineIs( _.image.readHead ) );
+  test.true( _.routineIs( _.image.read ) );
+  test.true( _.routineIs( _.image.fileRead ) );
 }
 
 // --
