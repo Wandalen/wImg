@@ -1,12 +1,13 @@
 {
   "name": "wimg",
-  "version": "0.2.50",
+  "version": "0.2.51",
   "description": "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "license": "MIT",
   "main": "proto/wtools/amid/l3/image/entry/Img.s",
   "files": [
     "proto/wtools/amid/l3/image/entry/Img.s",
+    "proto/wtools/amid/l3/image/include/Img.s",
     "proto/wtools/Tools.s"
   ],
   "scripts": {
