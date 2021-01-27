@@ -7,6 +7,7 @@
   "main": "proto/wtools/amid/l3/image/entry/Img.s",
   "files": [
     "proto/wtools/amid/l3/image/entry/Img.s",
+    "proto/wtools/amid/l3/image/include/Img.s",
     "proto/wtools/Tools.s"
   ],
   "scripts": {
