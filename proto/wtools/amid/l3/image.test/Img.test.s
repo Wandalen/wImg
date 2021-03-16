@@ -9,7 +9,6 @@ if( typeof module !== 'undefined' )
   let _ = require( '../../../Tools.s' );
 
   _.include( 'wTesting' );
-  debugger;
 
   require( '../image/entry/Img.s' );
 
