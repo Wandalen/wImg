@@ -1,6 +1,6 @@
 {
   "name": "wimg",
-  "version": "0.2.68",
+  "version": "0.2.69",
   "description": "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
   "author": "Kostiantyn Wandalen <wanalen@01.school>",
   "license": "MIT",
@@ -22,12 +22,12 @@
     "url": "https://github.com/Wandalen/wImg/issues"
   },
   "dependencies": {
-    "wTools": "gamma",
-    "wimage": "gamma"
+    "wTools": "delta",
+    "wimage": "delta"
   },
   "devDependencies": {
     "eslint": "7.1.0",
-    "wTesting": "gamma",
+    "wTesting": "delta",
     "wimg": "file:."
   },
   "keywords": [
