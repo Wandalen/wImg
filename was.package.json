@@ -4,7 +4,7 @@
   "description" : "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
   "author" : "Kostiantyn Wandalen <wanalen@01.school>",
   "license" : "MIT",
-  "main" : "proto/wtools/amid/l3/image/entry/Img.s",
+  "main" : "/pro/module/wImg/proto/node_modules/wimg",
   "files" : [ "proto/wtools/amid/l3/image/entry/Img.s", "proto/wtools/amid/l3/image/include/Img.s", "proto/wtools/Tools.s", "proto/node_modules" ],
   "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
   "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wImg.git" },
