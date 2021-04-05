@@ -76,8 +76,8 @@ path:
       raw: compiled
       content: prime
   npm.proto.entry:
-    - /pro/module/wImg/proto/wtools/amid/l3/image/entry/Img.s
-    - /pro/module/wImg/proto/node_modules/wimg
+    - proto/wtools/amid/l3/image/entry/Img.s
+    - proto/node_modules/wimg
 reflector:
   reflect.proto:
     inherit: predefined.*
