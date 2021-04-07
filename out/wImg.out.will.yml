@@ -1517,6 +1517,4 @@ module:
       ../.im.will.yml:
         hash: dab1f9e5fce1383f4e8c585d90bea6ed
         size: 4955
-      wImg.out.will.yml:
-        hash: ef51034ca56784bd1ba1d2fa92f533ec
-        size: 38853
+      wImg.out.will.yml: *ref_0
