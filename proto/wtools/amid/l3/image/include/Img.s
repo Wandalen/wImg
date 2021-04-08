@@ -5,7 +5,7 @@
 
 if( typeof module !== 'undefined' && module !== null )
 {
-  const _ = require( '../../../../Tools.s' );
+  const _ = require( 'Tools' );
 
   _.include( 'wimage' );
 }
