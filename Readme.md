@@ -3,18 +3,22 @@
 
 Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.
 
-## Try out from the repository
+### Try out from the repository
+
 ```
 git clone https://github.com/Wandalen/wImg
 cd wImg
-npm install
+will .npm.install
 node sample/trivial/Sample.s
 ```
 
+Make sure you have utility `willbe` installed. To install willbe: `npm i -g willbe@stable`. Willbe is required to build of the module.
+
 ### To add to your project
+
 ```
-npm add 'wimg@alpha'
+npm add 'wimg@stable'
 ```
 
-
+`Willbe` is not required to use the module in your project as submodule.
 
