@@ -1,15 +1,37 @@
 {
-  "name" : "wimg",
-  "version" : "0.2.91",
-  "description" : "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
-  "author" : "Kostiantyn Wandalen <wanalen@01.school>",
-  "license" : "MIT",
-  "main" : "proto/node_modules/wimg",
-  "files" : [ "proto/wtools/amid/l3/image/entry/Img.s", "proto/wtools/amid/l3/image/include/Img.s", "proto/node_modules", "proto/node_modules/Tools", "proto/node_modules/wimg" ],
-  "scripts" : { "test" : "wtest .run proto rapidity:-3", "docgen" : "wdocgen .build proto" },
-  "repository" : { "type" : "git", "url" : "https://github.com/Wandalen/wImg.git" },
-  "bugs" : { "url" : "https://github.com/Wandalen/wImg/issues" },
-  "dependencies" : { "wTools" : "gamma", "wimage" : "gamma" },
-  "devDependencies" : { "eslint" : "7.1.0", "wTesting" : "gamma" },
-  "keywords" : [ "wTools" ]
+  "name": "wimg",
+  "version": "0.2.92",
+  "description": "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
+  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "license": "MIT",
+  "main": "proto/node_modules/wimg",
+  "files": [
+    "proto/wtools/amid/l3/image/entry/Img.s",
+    "proto/wtools/amid/l3/image/include/Img.s",
+    "proto/node_modules",
+    "proto/node_modules/Tools",
+    "proto/node_modules/wimg"
+  ],
+  "scripts": {
+    "test": "wtest .run proto rapidity:-3",
+    "docgen": "wdocgen .build proto"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Wandalen/wImg.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Wandalen/wImg/issues"
+  },
+  "dependencies": {
+    "wTools": "gamma",
+    "wimage": "gamma"
+  },
+  "devDependencies": {
+    "wTesting": "gamma",
+    "eslint": "7.1.0"
+  },
+  "keywords": [
+    "wTools"
+  ]
 }
