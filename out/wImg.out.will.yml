@@ -3,8 +3,8 @@ root:
   - wImg.out
 consistency:
   ../will.yml: &ref_0
-    hash: 2c3d45973c6acbb874acbd97974e8fd3
-    size: 6472
+    hash: b78d50bd8802ad9e6df114b60086865a
+    size: 6331
 module:
   wImg.out:
     about:
@@ -375,9 +375,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -713,12 +710,6 @@ module:
           - 'step::doc.export'
         criterion:
           content: doc
-          export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
           export: 1
       export:
         steps:
@@ -1068,9 +1059,6 @@ module:
           content: npm
         inherit:
           - module.export
-      npm.publish:
-        opts:
-          shell: npm publish
       npm.generate.debug.raw:
         opts:
           entryPath: 'path::entry.out.*=1'
@@ -1407,12 +1395,6 @@ module:
         criterion:
           content: doc
           export: 1
-      npm.export:
-        steps:
-          - 'step::npm.publish'
-        criterion:
-          content: npm
-          export: 1
       export:
         steps:
           - 'build::proto.export'
@@ -1470,5 +1452,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: 2c3d45973c6acbb874acbd97974e8fd3
-        size: 6472
+        hash: b78d50bd8802ad9e6df114b60086865a
+        size: 6331
