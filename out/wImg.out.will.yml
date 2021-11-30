@@ -3,8 +3,8 @@ root:
   - wImg.out
 consistency:
   ../will.yml: &ref_0
-    hash: b78d50bd8802ad9e6df114b60086865a
-    size: 6331
+    hash: b8d80627642717e8d7e2f28b83bb7e20
+    size: 6339
 module:
   wImg.out:
     about:
@@ -1452,5 +1452,5 @@ module:
           - 'build::npm'
     consistency:
       ../will.yml:
-        hash: b78d50bd8802ad9e6df114b60086865a
-        size: 6331
+        hash: b8d80627642717e8d7e2f28b83bb7e20
+        size: 6339
