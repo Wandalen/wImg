@@ -2,7 +2,7 @@
   "name": "wimg",
   "version": "0.2.118",
   "description": "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
-  "author": "Kostiantyn Wandalen <wanalen@01.school>",
+  "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
   "license": "MIT",
   "main": "proto/node_modules/wimg",
   "files": [
