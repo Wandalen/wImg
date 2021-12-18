@@ -1,6 +1,6 @@
 {
   "name": "wimg",
-  "version": "0.2.120",
+  "version": "0.2.121",
   "description": "Standardized abstract interface to open / read / parse image with collection of plugins. Aggregates module Image.",
   "author": "Kostiantyn Wandalen <wandalen@obox.systems>",
   "license": "MIT",
